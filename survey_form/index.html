@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">codeIt Holiday Bootcamp</h1>
+        <p id="description" class="description text-center">
+          Ready to launch a new career?
+        </p>
+      </header>
+
+      <form id="survey-form" autocomplete="on">
+        <div class="form-content">
+          <label id="fname-label" for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            class="form-section"
+            required
+            placeholder="Enter Your First Name Here"
+          />
+        </div>
+        <div class="form-content">
+          <label id="lname-label" for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            class="form-section"
+            required
+            placeholder="Enter Your Last Name Here"
+          />
+        </div>
+        <div class="form-content">
+          <label id="email-label" for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-section"
+            required
+            placeholder="Enter Your Email Address Here"
+          />
+        </div>
+        <div class="form-content">
+          <label id="phone-label" for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="form-section"
+            required
+            placeholder="Enter 11 Digit Number"
+            size="11"
+          />
+        </div>
+        <div class="form-content">
+          <p>Which of the Following Best Describes You?</p>
+          <select
+            id="dropdown"
+            name="description"
+            class="form-section required"
+          >
+            <option disabled selected value>Select an option</option>
+            <option value="student">Student</option>
+            <option value="graduate">Graduate and Employed</option>
+            <option value="graduate">Graduate and Unemployed</option>
+            <option value="none">None</option>
+          </select>
+        </div>
+        <div class="form-content">
+          <p>Which of the Programs Would You Like to Enroll For?</p>
+          <input
+            type="checkbox"
+            id="web"
+            name="fullstack"
+            value="fullstack"
+            class="checkboxes"
+          />
+          <label for="web">Full-Stack Web Development</label>
+          <input
+            type="checkbox"
+            id="mobile"
+            name="mobile"
+            value="mobile"
+            class="checkboxes"
+          />
+          <label for="mobile">Mobile Development</label>
+          <input
+            type="checkbox"
+            id="product"
+            name="product"
+            value="product"
+            class="checkboxes"
+          />
+          <label for="product">Product Design</label>
+          <input
+            type="checkbox"
+            id="data"
+            name="data"
+            value="data"
+            class="checkboxes"
+          />
+          <label for="data">Data Science</label>
+          <input
+            type="checkbox"
+            id="cloud"
+            name="cloud"
+            value="cloud"
+            class="checkboxes"
+          />
+          <label for="cloud">Cyber Cloud</label>
+        </div>
+        <div class="form-content">
+          <p>Mode of Learning</p>
+          <input
+            type="radio"
+            id="campus"
+            name="campus"
+            value="campus"
+            class="radio"
+          />
+          <label for="campus">Nigeria Campus</label>
+          <input
+            type="radio"
+            id="campus"
+            name="campus"
+            value="campus"
+            class="radio"
+          />
+          <label for="campus">Berlin Campus</label>
+          <input
+            type="radio"
+            id="online"
+            name="online"
+            value="online"
+            class="radio"
+          />
+          <label for="online">Virtual</label>
+        </div>
+        <div class="form-content">
+          <p>How did you Hear About us?</p>
+          <select id="dropdown2" name="location" class="form-section">
+            <option value="online">Online Ad</option>
+            <option value="Newspaper">Newspaper Ad</option>
+            <option value="Twitter">Twitter</option>
+            <option value="LinkedIn">Newspaper Ad</option>
+            <option value="webSearch">Web Search</option>
+            <option value="Friend/Relative">Friend/Relative</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-content">
+          <p>Any Questions or Comment?</p>
+          <textarea
+            id="comment"
+            name="comment"
+            class="text-area"
+            placeholder="Enter Text Here"
+          ></textarea>
+        </div>
+        <div class="form-content">
+          <button type="submit" id="submit" class="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
